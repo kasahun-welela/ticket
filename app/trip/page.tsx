@@ -81,6 +81,7 @@ export default function page() {
                 height={64}
                 alt={`${bus.name} Logo`}
                 className="h-16 w-16"
+                priority
               />
               <CardTitle className="mt-2 text-lg font-bold text-center">
                 {bus.name}

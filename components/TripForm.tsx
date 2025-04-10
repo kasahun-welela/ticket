@@ -20,8 +20,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function TripForm() {
+  const router = useRouter();
+
   const formSchema = z.object({
     source: z.string().min(2, {
       message: "Source must be at least 2 characters.",
@@ -41,6 +44,7 @@ export default function TripForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+    router.push("/trip");
   }
 
   return (
@@ -49,7 +53,7 @@ export default function TripForm() {
         <CardTitle className="text-white text-2xl font-bold">
           Book Your Trip
         </CardTitle>
-        <CardDescription className="text-white/80">
+        <CardDescription className="text-white">
           Enter your trip details
         </CardDescription>
       </CardHeader>
