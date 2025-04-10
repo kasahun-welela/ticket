@@ -44,10 +44,14 @@ export default function TripForm() {
   }
 
   return (
-    <Card className="w-full max-w-md">
+    <Card className="w-full max-w-lg bg-white/30 backdrop-blur-md ">
       <CardHeader className="text-center">
-        <CardTitle>Book Your Trip</CardTitle>
-        <CardDescription>Enter your trip details</CardDescription>
+        <CardTitle className="text-white text-2xl font-bold">
+          Book Your Trip
+        </CardTitle>
+        <CardDescription className="text-white/80">
+          Enter your trip details
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -110,7 +114,10 @@ export default function TripForm() {
               )}
             />
 
-            <Button type="submit" className="w-full">
+            <Button
+              type="submit"
+              className="w-full bg-green-600 hover:bg-green-600/70"
+            >
               Search
             </Button>
           </form>

@@ -4,9 +4,21 @@ import TripForm from "@/components/TripForm";
 
 export default function Home() {
   return (
-    <>
-      <Image src={busHero} alt="bus hero" className="md:h-screen" />
-      <TripForm />
-    </>
+    <div className="relative h-screen w-full">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={busHero}
+          alt="bus hero"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
+      </div>
+
+      <div className="relative h-full flex flex-col justify-center items-center mx-6">
+        <TripForm />
+      </div>
+    </div>
   );
 }
