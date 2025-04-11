@@ -55,7 +55,7 @@ function NavBar() {
           <Link href="/">
             {" "}
             <Image
-              src="/ticket-logo.png"
+              src="/logo.png"
               alt="bus ticket logo"
               width={100}
               height={100}
@@ -107,7 +107,7 @@ function NavBar() {
       <div className="bg-white dark:bg-slate-800  flex justify-between items-center px-5 md:hidden py-5 fixed top-0 left-0 right-0 shadow-sm z-50 transition-all duration-300">
         <Link href="/">
           <Image
-            src="/ticket-logo.png"
+            src="/logo.png"
             alt="bus ticket logo"
             width={100}
             height={50}
