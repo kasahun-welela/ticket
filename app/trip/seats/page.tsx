@@ -60,9 +60,7 @@ export default function BusSeatBooking() {
       </div>
 
       {/* Bus Layout */}
-      <div className="bg-gray-100 p-6 rounded-lg">
-        {/* Driver's Side */}
-
+      <div className="bg-gray-100 dark:bg-[#020817] p-6 rounded-lg">
         {/* Seats Grid */}
         <div className="flex flex-col">
           <div className="grid grid-cols-4 md:grid-cols-15 gap-3 mb-6">
@@ -91,7 +89,7 @@ export default function BusSeatBooking() {
 
       {/* Selection Summary */}
       {selectedSeats.length > 0 && (
-        <div className="mt-8 p-6 bg-white border rounded-lg shadow">
+        <div className="mt-8 p-6 bg-white md:dark:bg-[#020817] border rounded-lg shadow">
           <h2 className="text-xl font-bold mb-4">Your Selection</h2>
           <div className="grid grid-cols-2 gap-4">
             <div>
